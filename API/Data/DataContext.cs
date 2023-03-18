@@ -5,7 +5,7 @@ namespace API.Data
 {
 
     public interface IDataContext { }
-    public class DataContext : DbContext,IDataContext
+    public class DataContext : DbContext, IDataContext
     {
         public DataContext(DbContextOptions options) : base(options)
         {
