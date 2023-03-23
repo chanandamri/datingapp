@@ -24,7 +24,6 @@ export class AppComponent implements OnInit {
       error: error => console.log(error),
       complete: () => console.log('Request has completed')
     })
-
   }
 
   setCurrentUser() {
