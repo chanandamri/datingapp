@@ -12,11 +12,9 @@ export class AccountService {
   private currentUserSource = new BehaviorSubject<User | null>(null);
   currentUser$ = this.currentUserSource.asObservable();
 
-
   constructor(private http: HttpClient) { }
 
   nngOnInit(): void {
-
   }
 
   login(model: any) {
