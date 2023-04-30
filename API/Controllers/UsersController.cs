@@ -31,7 +31,7 @@ namespace API.Controllers
             _logger.LogInformation("David is the king");
             _kuluService.DoTheChacha();
 
-            var users = await _userRepository.GetMembersAsnc();
+            var users = await _userRepository.GetMembersAsync();
             return Ok(users);
         }
 
